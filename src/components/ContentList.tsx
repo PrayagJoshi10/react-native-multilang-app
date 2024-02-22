@@ -1,16 +1,26 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {FlatList, StyleSheet, View} from 'react-native';
 import React from 'react';
+import NewsCard from './NewsCard';
+import {NewsList} from '../assets/NewsList';
 
-interface Props {}
-
-const ContentList = (props: Props) => {
+const ContentList = () => {
   return (
-    <View>
-      <Text>ContentList</Text>
+    <View style={styles.container}>
+      <FlatList
+        data={NewsList}
+        renderItem={({item}) => (
+          <NewsCard title={item.title} news={item.news} />
+        )}
+        showsVerticalScrollIndicator={false}
+      />
     </View>
   );
 };
 
 export default ContentList;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+});
