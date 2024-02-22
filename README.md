@@ -26,6 +26,6 @@ Follow these instructions to get the app up and running on your local machine.
 2. Install dependencies: yarn
 
 3. Run the app:
-   npx react-native start
-   npx react-native run-android
+   npx react-native start /
+   npx react-native run-android /
    npx react-native run-ios
