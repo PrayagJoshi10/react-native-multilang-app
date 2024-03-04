@@ -1,6 +1,6 @@
 # MultiLang - React Native Multi-Language Support Demo
 
-![MultiLang Demo](./Multilang.gif)
+<img src="./Multilang.gif" alt="StyleChange GIF" height="500" width="250">
 
 This React Native app demonstrates how to implement multi-language support using i18next and react-i18next packages.
 
